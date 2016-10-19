@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd" version="2.4">
+  <display-name>Employee Management System</display-name>
+  <description>
+        This is a simple web application with a source code organization
+        based on the recommendations of the Application Developer's Guide.
+    </description>
+  <servlet>
+    <servlet-name>index</servlet-name>
+    <servlet-class>servletpractice.EMS</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>index</servlet-name>
+    <url-pattern>/index</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>add</servlet-name>
+    <servlet-class>servletpractice.Add</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>add</servlet-name>
+    <url-pattern>/add</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>serverlayeradd</servlet-name>
+    <servlet-class>servletpractice.ServerLayerAdd</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>serverlayeradd</servlet-name>
+    <url-pattern>/sladd</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>list</servlet-name>
+    <servlet-class>servletpractice.List</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>list</servlet-name>
+    <url-pattern>/list</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>delete</servlet-name>
+    <servlet-class>servletpractice.Delete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>delete</servlet-name>
+    <url-pattern>/delete</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>update</servlet-name>
+    <servlet-class>servletpractice.Update</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>update</servlet-name>
+    <url-pattern>/update</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>serverlayerupdate</servlet-name>
+    <servlet-class>servletpractice.ServerLayerUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>serverlayerupdate</servlet-name>
+    <url-pattern>/slupdate</url-pattern>
+  </servlet-mapping>
+</web-app>
